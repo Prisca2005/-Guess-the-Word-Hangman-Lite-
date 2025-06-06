@@ -6,7 +6,16 @@
     <title>Guess the word</title>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body>
-    <h1 class="text-3xl text-center font-bold underline">Guess the word!</h1>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center h-screen space-y-6">
+    <h1 class="text-3xl font-bold">Guess the word!</h1>
+
+    <div id="wordDisplay" class="text-4xl tracking-widest"></div>
+    <div id="wrongLetters" class="text-red-600"></div>
+    <div id="remaining" class="text-yellow-400"></div>
+    <div id="message" class="text-green-600 text-2xl font-semibold"></div>
+
+    <button id="playAgain" class="hidden bg-blue-700 px-4 py-2 rounded">Play Again</button>
+
+    <script src="script.js"></script>
 </body>
 </html>
